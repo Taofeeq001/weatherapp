@@ -1,0 +1,118 @@
+.background{
+    background: url(../images/neda-astani-KWTkd7mHqKE-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    height: 100vh;
+    align-items: center;
+    animation: animate 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes animate {
+    0%{
+        background: url(../images/neda-astani-KWTkd7mHqKE-unsplash.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    40%{
+        background: url(../images/daniel-ramirez-q4TfWtnz_xw-unsplash.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    0%{
+        background: url(../images/wolfgang-hasselmann-bR_-gllg7Bs-unsplash.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+form{
+    width: 50%;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+form button{
+    padding: 15px;
+    font-size: large;
+    width: 20%;
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+}
+form input{
+    width: 80%;
+    padding: 15px;
+    border: none;
+    color: white;
+    background-color: transparent;
+    font-size: large;
+    outline: none;
+}
+.error{
+    color: red;
+    font-weight: 600;
+}
+.deg{
+    margin-right: 30rem;
+}
+.clear{
+    transform: rotate(270deg);
+}
+.description{
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10rem;
+    margin-top: 6rem;
+}
+.lower-desc{
+    display: flex;
+    width: 40%;
+    backdrop-filter: blur(10px);
+    color: black;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    border-radius: 15px;
+}
+.lower-desc div{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+sup{
+    font-size: small;
+}
+
+@media screen and (max-width: 950px) {
+    .background{
+        padding: 10 20px;
+        height: 100vh;
+    }
+    form{
+        width: 100%;
+    }
+    form input{
+        width: 70%;
+        outline: none;
+    }
+    form button{
+        width: 30%;
+    }
+    .description{
+        margin-bottom: 16rem;
+    }
+    .deg{
+        margin-right: 10rem;
+    }
+    .lower-desc{
+        width: 100%;
+    }
+}
